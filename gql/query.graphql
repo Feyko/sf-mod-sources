@@ -1,0 +1,9 @@
+query QGetMods($offset: Int!) {
+    getMods(filter: { limit: 100, offset: $offset}) {
+        count
+        mods {
+            name
+            source_url
+        }
+    }
+}

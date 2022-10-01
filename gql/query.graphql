@@ -3,7 +3,11 @@ query QGetMods($offset: Int!) {
         count
         mods {
             name
-            source_url
+            id
+            versions {
+                link
+                version
+            }
         }
     }
 }
